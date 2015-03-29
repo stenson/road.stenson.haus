@@ -1,0 +1,15 @@
+---
+  title: Roadtrip
+  grouped-index: true
+  company:
+    name: Stenson.haus
+    link: http://stenson.haus
+  tombstone: "•"
+  header:
+    home:
+      text-logo: "Off to California"
+  css:
+    - normalize
+    - main
+  head:
+    - '<link rel="stylesheet" href="http://fonts.typotheque.com/WF-009065-008146.css" type="text/css" />'
