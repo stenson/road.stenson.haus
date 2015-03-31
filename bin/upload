@@ -1,0 +1,1 @@
+rsync -r printed/ rrs2123@stenson.haus:~/webapps/road_stenson_haus/
