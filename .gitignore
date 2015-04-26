@@ -1,3 +1,5 @@
 printed
 *.otf
 .DS_Store
+.idea
+*.iml
