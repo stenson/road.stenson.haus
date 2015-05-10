@@ -5,7 +5,7 @@ body {
 }
 
 .width {
-  max-width: 580px;
+  max-width: 700px;
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -13,32 +13,64 @@ body {
 }
 
 #header-container {
-  background: MediumSeaGreen;
-  box-shadow: 0 0 20px rgba(0,0,0,.1);
-  border-bottom: 4px solid SeaGreen;
+  background: #8ACAC4;
+  box-shadow: 0 0 14px rgba(0,0,0,.2);
+  z-index: 1;
+  position: relative;
+  /*border-bottom: 10px solid rgba(69,95,91,0.3);*/
+  border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 #header {
-  height: 114px;
+  height: 118px;
+}
+
+#menu {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu .slash {
+  opacity: 0.5;
+  display: inline-block;
+  margin: 0 4px;
 }
 
 #logo {
-  position: absolute;
-  top: 9px;
-  left: 0px;
 }
 
-#logo a.tonal {
+#logo a.logo {
   display: block;
-  position: absolute;
-  top: 2px;
-  left: 10px;
-  font-family: "Woodkit Solid", "HelveticaNeue", Helvetica, sans-serif;
-  color: wheat;
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 42px;
-  line-height: 110%;
+  margin: auto auto;
+  width: 700px;
+}
+
+.logo img {
+  width: 700px !important;
+  height: auto !important;
+}
+
+#map {
+  height: 300px;
+  border-bottom: 1px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 0;
+  position: relative;
+}
+
+.leaflet-container .leaflet-control-attribution,
+.mapbox-logo,
+.leaflet-control-zoom
+{
+  display: none !important;
 }
 
 #container {

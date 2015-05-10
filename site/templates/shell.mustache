@@ -1,0 +1,23 @@
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet'/>
+<div id="header-container">
+  <div id="header" class="width">
+    <div id="logo">
+      <a href="/" class="logo">
+        <img src="/img/logo.png"/>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="map" class="map"></div>
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1Ijoicm9ic3RlbnNvbiIsImEiOiI2eGhrQUhzIn0.grW_DxaZPTOdl2xcmga2Ng';
+  L.mapbox.map("map", "robstenson.2f9441c9", {
+    scrollWheelZoom: false,
+  }).setView([42.36, -71.05], 6);
+</script>
+<div id="container" class="width">
+  <div id="content">
+    {{{content}}}
+  </div>
+</div>

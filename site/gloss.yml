@@ -7,7 +7,7 @@
   tombstone: "•"
   header:
     home:
-      text-logo: "Off to California"
+      logo: "/img/logo.png"
   css:
     - normalize
     - main
