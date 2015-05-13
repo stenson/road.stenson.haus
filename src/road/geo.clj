@@ -1,7 +1,5 @@
 (ns road.geo
   (:require [clojure.string :as string]
-            [clojure.xml :as xml]
-            [clojure.zip :as zip]
             [clojure.data.json :as json]
             [clojure.pprint :refer [pprint]]
             [clj-xpath.core :as xp]))
