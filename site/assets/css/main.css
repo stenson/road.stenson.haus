@@ -67,8 +67,8 @@ body {
 }
 
 .leaflet-container .leaflet-control-attribution,
-.mapbox-logo,
-.leaflet-control-zoom
+.mapbox-logo
+/*.leaflet-control-zoom*/
 {
   display: none !important;
 }

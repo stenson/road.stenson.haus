@@ -12,9 +12,11 @@
 <div id="map" class="map"></div>
 <script>
   L.mapbox.accessToken = 'pk.eyJ1Ijoicm9ic3RlbnNvbiIsImEiOiI2eGhrQUhzIn0.grW_DxaZPTOdl2xcmga2Ng';
-  L.mapbox.map("map", "robstenson.2f9441c9", {
+  var map = L.mapbox.map("map", "robstenson.2f9441c9", {
     scrollWheelZoom: false,
   }).setView([42.36, -71.05], 6);
+
+  L.mapbox.featureLayer().loadURL("/js/features.json").addTo(map);
 </script>
 <div id="container" class="width">
   <div id="content">
