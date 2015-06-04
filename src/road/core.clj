@@ -31,11 +31,11 @@
         (assoc :geo-data (points->geojson points))
         (assoc :latest (first points)))))
 
+(defn- config-mod [config]
+  (assoc config :index-mod index-mod))
+
 (def app
-  (tonal/app-with-mod
-    identity
-    (fn [config]
-      (assoc config :index-mod index-mod))))
+  (tonal/app-with-mod identity config-mod))
 
 (defn print-site []
-  (tonal/print-site))
+  (tonal/print-site false config-mod))
