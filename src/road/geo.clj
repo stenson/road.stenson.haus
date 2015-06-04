@@ -4,15 +4,6 @@
             [clojure.pprint :refer [pprint]]
             [clj-xpath.core :as xp]))
 
-(defn ?assoc
-  "Same as assoc, but skip the assoc if v is nil"
-  [m & kvs]
-  (->> kvs
-       (partition 2)
-       (filter second)
-       (map vec)
-       (into m)))
-
 (def ^:private kml (slurp "doc.kml"))
 
 (defn- mark
@@ -35,6 +26,15 @@
    (mark "Shopping" ["62AF44" "009D57"])
    (mark "Hotel" ["F4B400" "FAD199" "F8971B"])
    (mark "Venue" ["CDDC39"])])
+
+(defn ?assoc
+  "Same as assoc, but skip the assoc if v is nil"
+  [m & kvs]
+  (->> kvs
+       (partition 2)
+       (filter second)
+       (map vec)
+       (into m)))
 
 (defn- placemark->feature [p]
   (let [name (xp/$x:text "./name" p)

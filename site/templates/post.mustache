@@ -1,0 +1,47 @@
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1Ijoicm9ic3RlbnNvbiIsImEiOiI2eGhrQUhzIn0.grW_DxaZPTOdl2xcmga2Ng';
+  var map = L.mapbox.map("map", "robstenson.2f9441c9", {
+    scrollWheelZoom: false
+  }).setView([{{lat}}, {{lng}}], 8);
+  L.mapbox.featureLayer({
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [{{lng}},{{lat}}]
+    },
+    properties: {
+      title: '{{title}}',
+      description: '{{lede}}',
+      'marker-size': 'large',
+      'marker-color': '#CD5C5C'
+    }
+  }).addTo(map);
+</script>
+<div class="post">
+  <div class="post-metadata">
+    <h1>{{title}}</h1>
+    <div class="date">{{#date}}{{{string}}}{{/date}} &mdash; {{location}}</div>
+  </div>
+  <div class="post-text">
+    {{{html}}}
+  </div>
+  <div class="post-post">
+    {{#author}}
+      <div class="author">
+        &mdash;
+        {{#author-link}}
+          <a href="{{author-link}}">{{author}}</a>
+        {{/author-link}}
+        {{^author-link}}
+          {{author}}
+        {{/author-link}}
+      </div>
+    {{/author}}
+  </div>
+  {{#footnotes}}
+    <div class="post-footnotes">
+      <h6>Footnotes</h6>
+      {{{footnotes}}}
+    </div>
+  {{/footnotes}}
+</div>

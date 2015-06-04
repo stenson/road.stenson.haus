@@ -1,6 +1,6 @@
 body {
   background: white;
-  font-family: "Brioni Text", Georgia, serif;
+  font-family: "Fedra Serif A", Georgia, serif;
   font-size: 16px;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 #header-container {
-  background: #8ACAC4;
+  background: #5dbbaf;
   box-shadow: 0 0 14px rgba(0,0,0,.2);
   z-index: 1;
   position: relative;
@@ -74,7 +74,7 @@ body {
 }
 
 #container {
-  margin: 80px auto 80px auto;
+  margin: 40px auto 80px auto;
 }
 
 #content {
@@ -108,14 +108,18 @@ body {
 }
 
 .post-listing li a span.date {
-  font-weight: normal;
+  font-weight: bold;
   color: #ccc;
   display: inline-block;
   width: 30px;
 }
 
 .post-listing li a span.title {
-  font-size: 20px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 8px;
 }
 
 .post-listing li a span.ellipses {
@@ -153,8 +157,9 @@ body {
 }
 
 .post h1 {
-  font-family: "Woodkit Solid", sans-serif;
-  font-weight: normal;
+  font-family: "Fedra Serif A", sans-serif;
+  font-weight: bold;
+  font-style: italic;
   letter-spacing: 1px;
   line-height: 110%;
   color: #333;
@@ -164,6 +169,13 @@ body {
   font-size: 14px;
   font-style: italic;
   color: #aaa;
+}
+
+.post-metadata .location {
+  font-size: 14px;
+  font-style: italic;
+  color: #aaa;
+  margin-top: 8px;
 }
 
 .post-post {
@@ -274,23 +286,23 @@ body {
   line-height: 150%;
   font-size: 16px;
   /*text-indent: 8px;*/
+  color: #333;
 }
 
 .post p.classic em.inlined {
   color: #000;
-  font-family: "Brioni Text", sans-serif;
   font-style: italic;
 }
 
 .post .dropcap {
   float: left;
   color: rgb(206,0,0);
-  font-size: 60px;
-  line-height: 75px;
-  height: 51px;
-  padding: 0 7px 0 0;
-  font-family: "Woodkit Solid", sans-serif;
-  font-weight: normal;
+  font-size: 58px;
+  line-height: 54px;
+  height: 48px;
+  padding: 0 4px 0 0;
+  font-family: "Fedra Serif A", sans-serif;
+  font-weight: bold;
 }
 
 .post .parenthesis {

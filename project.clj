@@ -14,4 +14,5 @@
                  [tonal "0.1.0-SNAPSHOT"]]
   :plugins [[lein-ring "0.9.1"]]
   :ring {:handler road.core/app}
-  :profiles {:dev {:env {:config "site/"}}})
+  :profiles {:dev {:env {:config "site/"}}}
+  :aliases {"print-site" ["run" "-m" "road.core/print-site"]})
